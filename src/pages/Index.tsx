@@ -34,12 +34,14 @@ const Index = () => {
               and leading engineering organizations across multiple phases of the SDLC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="mailto:siddharth.smk@gmail.com">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
                 <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
               </Button>
-              <Button variant="outline" size="lg">
-                <Github className="mr-2 h-4 w-4" />
+                </a>
+              <Button variant="outline" size="lg" href=">
+                <Github className="mr-2 h-4 w-4"/>
                 View Work
               </Button>
             </div>
