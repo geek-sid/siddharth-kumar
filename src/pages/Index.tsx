@@ -31,7 +31,7 @@ const Index = () => {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Building high-performing teams and scalable systems. 12+ years of extensive experience in product development 
-              and leading engineering organizations across multiple phases of SDLC.
+              and leading engineering organizations across multiple phases of the SDLC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
@@ -65,7 +65,7 @@ const Index = () => {
               </p>
               <p className="text-lg text-muted-foreground mb-6">
                 Excellent Communication Skills with good experience in solving mission-critical issues, 
-                root cause analysis, and accountability. "CAN DO" attitude and eager to remain updated 
+                root cause analysis and accountability. "CAN DO" attitude and eager to remain updated 
                 with market trends and learn new things.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -88,25 +88,25 @@ const Index = () => {
               {
                 title: "Engineering Manager",
                 company: "ALQIMI",
-                period: "July 2023 - Present",
+                period: "July 2025 - Present",
                 location: "Delhi, India",
                 achievements: [
                   "Led end-to-end technical strategy and architecture for scalable full-stack applications",
-                  "Managed and mentored cross-functional team of frontend and backend engineers",
+                  "Managed and mentored a cross-functional team of frontend and backend engineers",
                   "Oversaw agile delivery processes and sprint planning for high-quality product releases",
-                  "Drove continuous improvement through performance metrics and adoption of best practices"
+                  "Drove continuous improvement through performance metrics and adoption of best practices."
                 ]
               },
               {
                 title: "Senior Technical Lead Frontend",
                 company: "ALQIMI",
-                period: "Sept 2021 - June 2023",
+                period: "Sept 2021 - June 2025",
                 location: "Delhi, India",
                 achievements: [
                   "Managed upgrade of existing AOSEN Product to latest tech stack and multiple client projects",
                   "Responsible for development & release of iOS and Android Mobile applications",
-                  "Involved in all phases of agile including requirements analysis, architecture design, and deployment",
-                  "Led development teams through complete SDLC from requirements to ongoing support"
+                  "Involved in all phases of agile, including requirements analysis, architecture design, and deployment",
+                  "Led development teams through complete SDLC from requirements to ongoing support."
                 ]
               },
               {
