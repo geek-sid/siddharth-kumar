@@ -16,38 +16,38 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b z-50">
+      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b z-50 animate-slide-in">
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-bold text-foreground">Siddharth Kumar</h1>
+            <h1 className="text-xl font-bold text-foreground animate-fade-in">Siddharth Kumar</h1>
             <div className="hidden md:flex space-x-6">
               <a
                 href="#about"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
               >
                 About
               </a>
               <a
                 href="#experience"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
               >
                 Experience
               </a>
               <a
                 href="#skills"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
               >
                 Skills
               </a>
               <a
                 href="#projects"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
               >
                 Achievements
               </a>
               <a
                 href="#contact"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105"
               >
                 Contact
               </a>
@@ -68,15 +68,15 @@ const Index = () => {
               extensive experience in product development and leading
               engineering organizations across multiple phases of the SDLC.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:0.4s]">
               <a href="mailto:siddharth.smk@gmail.com">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
                   <Mail className="mr-2 h-4 w-4" />
                   Get In Touch
                 </Button>
               </a>
               <a target="_blank" href="https://linkedin.com/in/siddharth-kumar009">
-                <Button variant="outline" size="lg">
+                <Button variant="outline" size="lg" className="hover:scale-105 transition-transform duration-200">
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </Button>
@@ -89,7 +89,7 @@ const Index = () => {
       {/* About Section */}
       <section id="about" className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in">
             About Me
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -111,17 +111,17 @@ const Index = () => {
                 "CAN DO" attitude and eager to remain updated with market trends
                 and learn new things.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <Badge variant="secondary" className="px-3 py-1">
+              <div className="flex flex-wrap gap-3 animate-fade-in [animation-delay:0.3s]">
+                <Badge variant="secondary" className="px-3 py-1 hover:scale-105 transition-transform duration-200">
                   Team Leadership
                 </Badge>
-                <Badge variant="secondary" className="px-3 py-1">
+                <Badge variant="secondary" className="px-3 py-1 hover:scale-105 transition-transform duration-200">
                   Product Development
                 </Badge>
-                <Badge variant="secondary" className="px-3 py-1">
+                <Badge variant="secondary" className="px-3 py-1 hover:scale-105 transition-transform duration-200">
                   Full-Stack Development
                 </Badge>
-                <Badge variant="secondary" className="px-3 py-1">
+                <Badge variant="secondary" className="px-3 py-1 hover:scale-105 transition-transform duration-200">
                   Agile Methodologies
                 </Badge>
               </div>
@@ -133,7 +133,7 @@ const Index = () => {
       {/* Experience Section */}
       <section id="experience" className="py-16 px-6">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in">
             Professional Experience
           </h2>
           <div className="max-w-4xl mx-auto space-y-8">
@@ -213,7 +213,8 @@ const Index = () => {
             ].map((job, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-shadow animate-fade-in"
+                className="p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                   <div>
@@ -254,42 +255,42 @@ const Index = () => {
       {/* Skills Section */}
       <section id="skills" className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in">
             Skills & Expertise
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow animate-fade-in">
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in">
               <Users className="mx-auto mb-4 h-12 w-12 text-primary" />
               <h3 className="text-xl font-bold mb-4">Leadership</h3>
               <div className="space-y-2">
-                <Badge variant="outline">Team Management</Badge>
-                <Badge variant="outline">Technical Mentoring</Badge>
-                <Badge variant="outline">Sprint Planning</Badge>
-                <Badge variant="outline">Client Coordination</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Team Management</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Technical Mentoring</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Sprint Planning</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Client Coordination</Badge>
               </div>
             </Card>
 
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow animate-fade-in">
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in [animation-delay:0.2s]">
               <Code className="mx-auto mb-4 h-12 w-12 text-primary" />
               <h3 className="text-xl font-bold mb-4">Technical Stack</h3>
               <div className="space-y-2">
-                <Badge variant="outline">Java/Spring Boot</Badge>
-                <Badge variant="outline">Angular/JavaScript</Badge>
-                <Badge variant="outline">Microservices</Badge>
-                <Badge variant="outline">Kubernetes/Docker</Badge>
-                <Badge variant="outline">Jenkins/CI-CD</Badge>
-                <Badge variant="outline">SonarQube</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Java/Spring Boot</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Angular/JavaScript</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Microservices</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Kubernetes/Docker</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Jenkins/CI-CD</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">SonarQube</Badge>
               </div>
             </Card>
 
-            <Card className="p-6 text-center hover:shadow-lg transition-shadow animate-fade-in">
+            <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in [animation-delay:0.4s]">
               <Trophy className="mx-auto mb-4 h-12 w-12 text-primary" />
               <h3 className="text-xl font-bold mb-4">Expertise</h3>
               <div className="space-y-2">
-                <Badge variant="outline">Mobile Development</Badge>
-                <Badge variant="outline">RESTful Services</Badge>
-                <Badge variant="outline">System Architecture</Badge>
-                <Badge variant="outline">GraphQL/APIs</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">Mobile Development</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">RESTful Services</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">System Architecture</Badge>
+                <Badge variant="outline" className="hover:scale-105 transition-transform duration-200">GraphQL/APIs</Badge>
               </div>
             </Card>
           </div>
@@ -299,7 +300,7 @@ const Index = () => {
       {/* Projects Section */}
       <section id="projects" className="py-16 px-6">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 animate-fade-in">
             Achievements & Education
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -373,7 +374,8 @@ const Index = () => {
             ].map((project, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-shadow animate-fade-in"
+                className="p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <h3 className="text-xl font-bold mb-3">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">
@@ -381,7 +383,7 @@ const Index = () => {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
-                    <Badge key={i} variant="secondary">
+                    <Badge key={i} variant="secondary" className="hover:scale-105 transition-transform duration-200">
                       {tech}
                     </Badge>
                   ))}
@@ -395,8 +397,8 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Let's Connect</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 animate-fade-in">Let's Connect</h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto animate-fade-in [animation-delay:0.2s]">
             I'm always interested in discussing engineering leadership, team
             building, and innovative technology solutions.
           </p>
